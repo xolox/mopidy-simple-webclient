@@ -1,0 +1,4 @@
+include *.rst
+include *.txt
+include mopidy_simple_webclient/ext.conf
+graft mopidy_simple_webclient/static

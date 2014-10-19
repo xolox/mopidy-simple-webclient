@@ -1,0 +1,89 @@
+<!--
+
+ Simple Mopidy web client.
+
+ Author: Peter Odding <peter@peterodding.com>
+ Last Change: October 19, 2014
+ URL: https://github.com/xolox/mopidy-simple-webclient
+
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Music player</title>
+    <meta charset="utf-8">
+    <!-- jQuery from the Google CDN. -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <!-- Bootstrap CSS & JS from the Bootstrap CDN. -->
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <!-- The Mopidy client behavior and styling. -->
+    <link href="styles/client.css" rel="stylesheet">
+    <script src="behavior/client.js"></script>
+    <script src="behavior/sprintf.js"></script>
+  </head>
+  <body>
+    <!-- Server selection interface. -->
+    <div id="select-server" class="hidden-by-default dialog">
+      <p>To get started please enter the address of your <a href="https://www.mopidy.com/">Mopidy server</a> below and click on the connect button. The default should be fine in most circumstances.</p>
+      <form action="" method="post">
+        <p><label>Server URL: <input type="text" id="server-url" value=""></label></p>
+        <p><button class="btn btn-primary" id="connect">Connect to server ..</button></p>
+        <p id="connect-error"></p>
+      </form>
+    </div>
+    <!-- Play list selection interface. -->
+    <div id="select-playlist" class="hidden-by-default dialog">
+      <p>Select a playlist below to start playing the tracks in that playlist.
+         Alternatively you can <a href="#" id="cancel-playlist-selection-button">return
+         without selecting a playlist</a>.</p>
+      <p id="loading-playlists-spinner"><img src="images/spinner.gif" class="spinner"></p>
+      <p id="available-playlists"></p>
+      <div id="no-playlists-message" class="error-message hidden-by-default">
+        <p><strong>You don't have any playlists!</strong></p>
+        <p>That's a bit of a problem because this Mopidy client expects to get
+           started by loading a playlist into the play queue!</p>
+        <p>Please use another Mopidy client to create a playlist or create a
+           playlist in Spotify (and make sure the Spotify plug-in for Mopidy is
+           enabled).</p>
+      </div>
+    </div>
+    <!-- Now playing interface. -->
+    <div id="now-playing" class="hidden-by-default">
+      <div id="track-info"></div>
+      <div id="controls">
+        <p id="playback-controls">
+          <img src="images/previous.png" id="previous-track-button" class="dimmed-image-button hover-image-button">
+          <img src="images/play.png" id="play-button" class="dimmed-image-button hover-image-button">
+          <img src="images/pause.png" id="pause-button" class="dimmed-image-button hover-image-button">
+          <img src="images/stop.png" id="stop-button" class="dimmed-image-button hover-image-button">
+          <img src="images/next.png" id="next-track-button" class="dimmed-image-button hover-image-button">
+        </p>
+        <p id="volume-control">
+          <span class="step" onclick="mopidy_client.set_volume(0)"></span>
+          <span class="step" onclick="mopidy_client.set_volume(20)"></span>
+          <span class="step" onclick="mopidy_client.set_volume(40)"></span>
+          <span class="step" onclick="mopidy_client.set_volume(60)"></span>
+          <span class="step" onclick="mopidy_client.set_volume(80)"></span>
+          <span class="step" onclick="mopidy_client.set_volume(100)"></span>
+          <br clear="both">
+        </p>
+        <p id="misc-controls">
+          <button class="btn btn-large" id="select-playlist-button">
+            <img src="images/eject.png">
+            Select playlist ..
+          </button>
+          <button class="btn btn-large" id="toggle-shuffle-button">
+            <img src="images/shuffle.png">
+            <span>Enable shuffle</span>
+          </button>
+          <button class="btn btn-large" id="toggle-repeat-button">
+            <img src="images/repeat.png">
+            <span>Enable repeat</span>
+          </button>
+        </p>
+      </div>
+    </div>
+    <p id="runtime-error" class="error-message hidden-by-default"></p>
+  </body>
+</html>

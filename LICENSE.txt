@@ -1,0 +1,44 @@
+Copyright (c) 2014 Peter Odding
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+----------------------------------------
+
+The simple Mopidy webclient builds on top of the following projects:
+
+- jQuery (the JavaScript library). Licensed under the MIT license, refer to
+  https://github.com/jquery/jquery/blob/2.0.2/MIT-LICENSE.txt for details.
+
+- Bootstrap (the CSS framework). The version currently used is licensed under
+  the Apache License, refer to https://github.com/twbs/bootstrap/blob/v2.3.2/LICENSE
+  for details.
+
+- sprintf.js. Licensed under the BSD license, refer to
+  https://github.com/alexei/sprintf.js/blob/master/LICENSE for details
+  (I used http://www.what-license.com/ to identify the license).
+
+- Several icons from the Humanity icon theme included in Ubuntu Linux. The most
+  authoritative source for a license I could find was
+  http://bazaar.launchpad.net/~ubuntu-art-pkg/human-icon-theme/ubuntu/view/head:/COPYING
+  which states that the "Creative Commons Attribution-ShareAlike 3.0 License"
+  applies. To be honest it's not clear to me if using these icons requires my
+  work to be licensed under the same license as well. If it turns out that this
+  is true I'd rather find a different icon set, because the CC BY-SA license
+  for software doesn't make sense.
