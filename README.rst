@@ -74,8 +74,8 @@ Accessing the web interface
 Once you've installed the extension and restarted your Mopidy daemon, the
 Mopidy web interface should look similar to this:
 
- .. image:: https://github.com/xolox/mopidy-simple-webclient/raw/master/screenshots/getting-started.png
-    :alt: Mopidy webserver start screen.
+.. image:: https://github.com/xolox/mopidy-simple-webclient/raw/master/screenshots/getting-started.png
+   :alt: Mopidy webserver start screen.
 
 Click on the 'simple-webclient' link to open the simple Mopidy webclient.
 
@@ -88,8 +88,8 @@ Instead you are expected to create a playlist in a more full featured Mopidy
 client or Spotify_ and select this playlist in the simple Mopidy web client.
 Selecting a playlist looks similar to this:
 
- .. image:: https://github.com/xolox/mopidy-simple-webclient/raw/master/screenshots/playlist-selection.png
-    :alt: Playlist selection interface of the simple Mopidy webclient.
+.. image:: https://github.com/xolox/mopidy-simple-webclient/raw/master/screenshots/playlist-selection.png
+   :alt: Playlist selection interface of the simple Mopidy webclient.
 
 Please note that I've only been using Mopidy for a couple of days (at the time
 I'm writing this) so I'm still getting to grips with how Mopidy works and this
@@ -103,8 +103,8 @@ Once the Mopidy track list (the 'current playlist') contains some tracks the
 simple Mopidy webclient will switch to the playback control interface which
 looks like this:
 
- .. image:: https://github.com/xolox/mopidy-simple-webclient/raw/master/screenshots/playback-control.png
-    :alt: Playback control interface of the simple Mopidy webclient.
+.. image:: https://github.com/xolox/mopidy-simple-webclient/raw/master/screenshots/playback-control.png
+   :alt: Playback control interface of the simple Mopidy webclient.
 
 Here's an explanation of the main elements in the playback control interface:
 
