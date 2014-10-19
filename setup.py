@@ -3,7 +3,7 @@
 # Setup script for the `Mopidy-Simple-Webclient' package.
 #
 # Author: Peter Odding <peter@peterodding.com>
-# Last Change: October 18, 2014
+# Last Change: October 19, 2014
 # URL: https://github.com/xolox/mopidy-simple-webclient
 
 import os
@@ -45,7 +45,7 @@ setuptools.setup(
     classifiers=[
         'Environment :: No Input/Output (Daemon)',
         'Intended Audience :: End Users/Desktop',
-        'License :: OSI Approved :: Apache Software License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 2',
         'Topic :: Multimedia :: Sound/Audio :: Players',
