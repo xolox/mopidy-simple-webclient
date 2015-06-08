@@ -1,14 +1,14 @@
 # Simple Mopidy web client.
 #
 # Author: Peter Odding <peter@peterodding.com>
-# Last Change: October 19, 2014
+# Last Change: June 8, 2015
 # URL: https://github.com/xolox/mopidy-simple-webclient
 
 import os.path
 import mopidy.config
 import mopidy.ext
 
-__version__ = '0.1'
+__version__ = '0.1.1'
 
 class Extension(mopidy.ext.Extension):
 

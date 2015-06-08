@@ -1,7 +1,7 @@
 /* Simple Mopidy web client.
  *
  * Author: Peter Odding <peter@peterodding.com>
- * Last Change: October 19, 2014
+ * Last Change: June 8, 2015
  * URL: https://github.com/xolox/mopidy-simple-webclient
  */
 
@@ -152,7 +152,7 @@ MopidyClient.prototype.select_playlist = function() {
     var labels = [];
     for (var i = 0; i < playlists.length; i++) {
       var name = playlists[i].name;
-      var size = playlists[i].tracks.length;
+      var size = playlists[i].tracks ? playlists[i].tracks.length : 0;
       var classes = 'btn btn-large';
       if (name == 'Starred')
         classes += ' btn-primary';
